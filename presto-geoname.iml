@@ -15,5 +15,8 @@
     <orderEntry type="library" exported="" name="io.airlift:slice:0.9" level="project" />
     <orderEntry type="library" name="io.prestosql:presto-spi:315" level="project" />
     <orderEntry type="library" name="com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:6.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.48" level="project" />
+    <orderEntry type="library" name="org.isuper:s2-geometry-library-java:0.0.1" level="project" />
   </component>
 </module>

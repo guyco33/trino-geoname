@@ -24,13 +24,13 @@ public class GeonameFunctions {
     @Description("Returns geoname attribute for a given latitude and longitude. Attribute can be one of: " + attributes_desc)
     @SqlType(StandardTypes.VARCHAR)
     @SqlNullable
-    public static Slice geonameCountryCode (
+    public static Slice geoname (
             @SqlType(StandardTypes.DOUBLE) double lat,
             @SqlType(StandardTypes.DOUBLE) double lon,
             @SqlType(StandardTypes.VARCHAR) Slice attr
             ) {
         City city = new Atlas().find(lat, lon);
-        return utf8Slice(getTypeValue(city, attr.toStringUtf8().toLowerCase()));
+        return (city == null) ? null : utf8Slice(getTypeValue(city, attr.toStringUtf8().toLowerCase()));
     }
 
     private static String getTypeValue(City city, String attr) {
