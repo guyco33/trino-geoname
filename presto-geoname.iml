@@ -11,12 +11,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="atlas-0.1.0" level="project" />
-    <orderEntry type="library" exported="" name="io.airlift:slice:0.9" level="project" />
-    <orderEntry type="library" name="io.prestosql:presto-spi:315" level="project" />
-    <orderEntry type="library" name="com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="Maven: org.isuper:s2-geometry-library-java:0.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: io.airlift:slice:0.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: io.prestosql:presto-spi:315" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: io.airlift:units:1.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openjdk.jol:jol-core:0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:6.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.48" level="project" />
-    <orderEntry type="library" name="org.isuper:s2-geometry-library-java:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: atlas:atlas:0.1.0" level="project" />
   </component>
 </module>
