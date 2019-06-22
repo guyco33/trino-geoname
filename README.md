@@ -1,6 +1,7 @@
 # presto-geoname
 
 Presto plugin functions to returns the nearest geoname's centroid point (https://www.geonames.org/) from a given latitude and longitude.
+
 Searching the nearest geoname's centroid point is done efficiently by using google s2 geometry (http://s2geometry.io/)   
 
 
