@@ -1,7 +1,7 @@
-package io.prestosql.geoname.functions;
+package io.trino.geoname.functions;
 
 import com.google.common.collect.ImmutableSet;
-import io.prestosql.spi.Plugin;
+import io.trino.spi.Plugin;
 
 import java.util.Set;
 

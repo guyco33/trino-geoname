@@ -1,4 +1,4 @@
-package io.prestosql.geoname.functions;
+package io.trino.geoname.functions;
 
 import org.testng.annotations.Test;
 

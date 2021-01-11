@@ -1,18 +1,18 @@
-package io.prestosql.geoname.functions;
+package io.trino.geoname.functions;
 
 import atlas.Atlas;
 import atlas.City;
 import io.airlift.slice.Slice;
-import io.prestosql.spi.PrestoException;
-import io.prestosql.spi.function.Description;
-import io.prestosql.spi.function.ScalarFunction;
-import io.prestosql.spi.function.SqlNullable;
-import io.prestosql.spi.function.SqlType;
-import io.prestosql.spi.type.StandardTypes;
+import io.trino.spi.TrinoException;
+import io.trino.spi.function.Description;
+import io.trino.spi.function.ScalarFunction;
+import io.trino.spi.function.SqlNullable;
+import io.trino.spi.function.SqlType;
+import io.trino.spi.type.StandardTypes;
 
 import static io.airlift.slice.Slices.utf8Slice;
-import static io.prestosql.spi.StandardErrorCode.INVALID_FUNCTION_ARGUMENT;
-import static io.prestosql.spi.type.StandardTypes.VARCHAR;
+import static io.trino.spi.StandardErrorCode.INVALID_FUNCTION_ARGUMENT;
+import static io.trino.spi.type.StandardTypes.VARCHAR;
 import static java.lang.String.format;
 
 public class GeonameFunctions {
@@ -77,7 +77,7 @@ public class GeonameFunctions {
         if (attr.equals("continent")) {
             return city.continent;
         }
-        throw new PrestoException(INVALID_FUNCTION_ARGUMENT, format("Valid attributes are: %s", attributes_desc));
+        throw new TrinoException(INVALID_FUNCTION_ARGUMENT, format("Valid attributes are: %s", attributes_desc));
     }
 
 

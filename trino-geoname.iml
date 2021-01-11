@@ -21,8 +21,8 @@
     <orderEntry type="library" name="Maven: org.isuper:s2-geometry-library-java:0.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: io.airlift:slice:0.40" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openjdk.jol:jol-core:0.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: io.prestosql:presto-spi:345" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: io.trino:trino-spi:351" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:6.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.48" level="project" />
     <orderEntry type="module-library">
