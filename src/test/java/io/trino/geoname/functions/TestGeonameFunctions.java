@@ -1,12 +1,19 @@
 package io.trino.geoname.functions;
 
+import io.trino.operator.scalar.AbstractTestFunctions;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.airlift.slice.Slices.utf8Slice;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
-public class GeonameFunctionsTest {
+public class TestGeonameFunctions { // extends AbstractTestFunctions {
 
+//    @BeforeClass
+//    public void setupClass()
+//    {
+//        registerScalar(GeonameFunctions.class);
+//    }
 
     @Test
     public void testGeoname() {
@@ -24,5 +31,4 @@ public class GeonameFunctionsTest {
         assertEquals(GeonameFunctions.geoname(29.896322, 35.059227, utf8Slice("currency")).toStringUtf8(), "ILS");
         assertEquals(GeonameFunctions.geoname(29.896322, 35.059227, utf8Slice("continent")).toStringUtf8(), "AS");
     }
-
 }

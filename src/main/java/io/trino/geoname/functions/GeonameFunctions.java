@@ -18,8 +18,7 @@ import static java.lang.String.format;
 public class GeonameFunctions {
 
     private static final String attributes_desc = "countrycode | city | timezone | id | admin1 | admin2 | countryname | latlon | currency | continent";
-
-    private GeonameFunctions() {}
+    final static Atlas ATLAS =  new Atlas();
 
     @ScalarFunction("geoname")
     @Description("Returns nearest geoname from it's centroid to a given latitude and longitude")
@@ -29,7 +28,7 @@ public class GeonameFunctions {
             @SqlType(StandardTypes.DOUBLE) double lat,
             @SqlType(StandardTypes.DOUBLE) double lon
     ) {
-        City city = new Atlas().find(lat, lon);
+        City city = ATLAS.find(lat, lon);
         return (city == null) ? null : utf8Slice(city.toString());
     }
 
@@ -42,7 +41,7 @@ public class GeonameFunctions {
             @SqlType(StandardTypes.DOUBLE) double lon,
             @SqlType(VARCHAR) Slice attr
             ) {
-        City city = new Atlas().find(lat, lon);
+        City city = ATLAS.find(lat, lon);
         return (city == null) ? null : utf8Slice(getTypeValue(city, attr.toStringUtf8().toLowerCase()));
     }
 
