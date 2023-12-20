@@ -36,7 +36,6 @@
                             <overWriteIfNewer>true</overWriteIfNewer>
                             <excludeTransitive>true</excludeTransitive>
                             <excludeScope>provided</excludeScope>
-                            <excludeGroupIds>org.testng</excludeGroupIds>
                         </configuration>
                     </execution>
                 </executions>
@@ -53,7 +52,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>31.1-jre</version>
+            <version>32.1.3-jre</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -66,22 +65,23 @@
         <dependency>
             <groupId>io.airlift</groupId>
             <artifactId>slice</artifactId>
-            <version>0.44</version>
+            <version>2.2</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>io.trino</groupId>
             <artifactId>trino-spi</artifactId>
-            <version>403</version>
+            <version>435</version>
             <scope>provided</scope>
         </dependency>
 
+
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.7.1</version>
-            <scope>test</scope>
+            <groupId>io.trino</groupId>
+            <artifactId>trino-testing</artifactId>
+            <version>435</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -92,12 +92,6 @@
             <systemPath>${project.basedir}/local-maven-repo/atlas-0.1.0.jar</systemPath>
         </dependency>
 
-        <dependency>
-            <groupId>io.trino</groupId>
-            <artifactId>trino-testing</artifactId>
-            <version>403</version>
-            <scope>provided</scope>
-        </dependency>
 
     </dependencies>
 
